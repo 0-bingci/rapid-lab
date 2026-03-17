@@ -3,7 +3,19 @@
 import { useState } from "react";
 import Link from "next/link";
 
-const tools = [
+const tools: {
+  id: string;
+  href: string;
+  iconClass: string;
+  iconBg: string;
+  iconText: string;
+  iconHoverBg: string;
+  shadowHover: string;
+  name: string;
+  desc: string;
+  category: string;
+  external?: boolean;
+}[] = [
   {
     id: "json-formatter",
     href: "/tools/json-formatter",
